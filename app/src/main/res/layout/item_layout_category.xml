@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="lang"
+            type="String" />
+        <variable
+            name="category"
+            type="com.art4musilm.artfoodCustomer.models.response.Category" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_90sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="0dp"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/category_card"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:backgroundTint="@color/uvv_light_gray"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    imageBinding="@{category.image}"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:src="@drawable/breakfast_013"></ImageView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="@string/category"
+                android:maxLines="1"
+                android:ellipsize="end"
+                notNullText='@{lang.equals("ar")?category.name:category.nameen}'
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:layout_width="@dimen/_11sdp"
+                android:layout_height="@dimen/_7sdp"
+                android:id="@+id/selection"
+                android:src="@drawable/categ_selector"
+                android:visibility="invisible"
+                android:layout_gravity="center"></ImageView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

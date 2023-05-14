@@ -1,0 +1,33 @@
+<component name="libraryTable">
+  <library name="Gradle: com.weiwangcn.betterspinner:library:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/56bc271657ee38a1c9a522afdf181e06/jetified-library-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/56bc271657ee38a1c9a522afdf181e06/jetified-library-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/56bc271657ee38a1c9a522afdf181e06/jetified-library-1.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a46cfdb9ab60eb6f33fdc97ebd00d41f/jetified-library-1.1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a46cfdb9ab60eb6f33fdc97ebd00d41f/jetified-library-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a46cfdb9ab60eb6f33fdc97ebd00d41f/jetified-library-1.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/643503166a25a7b6310b6423e2ea5d34/jetified-library-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/643503166a25a7b6310b6423e2ea5d34/jetified-library-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/643503166a25a7b6310b6423e2ea5d34/jetified-library-1.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c31141610dcf4313b4603018c86cc98/jetified-library-1.1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c31141610dcf4313b4603018c86cc98/jetified-library-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c31141610dcf4313b4603018c86cc98/jetified-library-1.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f4187936a8bdafb3d3c25749ab0cc7fc/jetified-library-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f4187936a8bdafb3d3c25749ab0cc7fc/jetified-library-1.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f4187936a8bdafb3d3c25749ab0cc7fc/jetified-library-1.1.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fee1b3831b0dba094df2aeefb3f4a527/jetified-library-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fee1b3831b0dba094df2aeefb3f4a527/jetified-library-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fee1b3831b0dba094df2aeefb3f4a527/jetified-library-1.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ebc0f791688c62fa44c85ad75651568/jetified-library-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ebc0f791688c62fa44c85ad75651568/jetified-library-1.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ebc0f791688c62fa44c85ad75651568/jetified-library-1.1.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.weiwangcn.betterspinner/library/1.1.0/363a245308235bd86a27676e1dbeac539a308aa/library-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.weiwangcn.betterspinner/library/1.1.0/a73c8a089e4fcb0ed1934f230e5b1e5f3b3b2bf6/library-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

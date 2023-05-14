@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.art4musilm.artfoodCustomer.viewModels.AccountViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activites.account.PersonalInfoActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/custom_app_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></include>
+        <include layout="@layout/loading_layout"
+            app:viewModel="@{viewModel}"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center|top"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <FrameLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_15sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:civ_border_width="@dimen/_1sdp"
+                    imageAvatarBinding="@{viewModel.observeUserProfile().data.image}"
+                    android:src="@drawable/ic_user_1"
+                    app:civ_border_color="@color/gray"></de.hdodenhof.circleimageview.CircleImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="changeUserImg"
+                    android:src="@drawable/ic_changepic"></ImageView>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_weight="1"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ahmed_ali"
+                    android:textSize="@dimen/_12sdp"
+                    android:textAlignment="viewEnd"
+                    notNullHtmlText="@{viewModel.observeUserProfile().data.name}"
+                    android:textColor="@color/black"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:layout_weight="1"></TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@color/uvv_light_gray"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_number"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_weight="1"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+966655599"
+                    android:textSize="@dimen/_12sdp"
+                    android:textAlignment="viewEnd"
+                    notNullHtmlText="@{viewModel.observeUserProfile().data.mobile}"
+                    android:textColor="@color/black"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:layout_weight="1"></TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@color/uvv_light_gray"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_address"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_weight="1"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ahmed@mail.com"
+                    android:textSize="@dimen/_12sdp"
+                    notNullHtmlText="@{viewModel.observeUserProfile().data.email}"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/black"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:layout_weight="1"></TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@color/uvv_light_gray"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/country"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_weight="1"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ksa"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:layout_weight="1"></TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:visibility="gone"
+                android:background="@color/uvv_light_gray"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_location"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_weight="1"></TextView>
+
+                <TextView
+                    android:id="@+id/tvSelectLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_location"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:drawableEnd="@drawable/ic_ico___24___map___places___poi"
+                    android:layout_weight="1"></TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@color/uvv_light_gray"></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/orange_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="@string/edit"
+                android:textSize="@dimen/_11sdp"
+                android:onClick="editProfile"
+                android:layout_weight="1"></androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/stroke_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:textSize="@dimen/_11sdp"
+                android:text="@string/change_password"
+                android:onClick="goChangePassword"
+                android:layout_weight="1"></androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="lang"
+            type="String" />
+
+        <variable
+            name="family"
+            type="com.art4musilm.artfoodCustomer.models.response.Family" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/logo"
+                    imageBinding="@{family.image}"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:src="@drawable/res_img"
+                    android:transitionName="storeLogo"
+                    app:civ_border_color="@color/gray"
+                    app:civ_border_width="@dimen/_1sdp"></de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    notNullText='@{lang.equals("ar")?family.familystatusName:family.familystatusNameen}'
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background='@{family.familystatus.equals("4")?@drawable/busy_bg:@drawable/status_bg}'
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:text="@string/open"
+                    android:textColor="@color/white"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    notNullText='@{family.name}'
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/store_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    notNullText="@{family.categors}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_10sdp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:background="@color/uvv_light_gray"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_2sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:text="@string/distance"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        notNullText='@{String.format("%.0f",Double.parseDouble(family.distance))+" km"}'
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_10_km"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_9sdp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_2sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:text="@string/delivery_fees"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"></TextView>
+                    <!--                    notNullText='@{family.isdelivery.equals("Y")? String.format(@string/sr("%.0f",Double.parseDouble(family.deliveryprice))) : String.format(@string/sr("%.0f",Double.parseDouble(family.priceequation)))}'-->
+
+                    <TextView
+                        android:id="@+id/tvDeliveryPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_10_sar"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:background="@color/uvv_light_gray"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_2sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:text="@string/estimated_time"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        notNullText='@{family.expectedtime}'
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

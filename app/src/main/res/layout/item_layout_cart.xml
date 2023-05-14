@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="cartModel"
+            type="com.art4musilm.artfoodCustomer.models.CartModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            app:riv_corner_radius="@dimen/_10sdp"
+            android:src="@drawable/meal_ic"
+            imageBinding="@{cartModel.imgPath}"
+            android:scaleType="fitXY">
+        </com.makeramen.roundedimageview.RoundedImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                notNullText="@{cartModel.name}"
+                android:ellipsize="end"
+                android:text="@string/meal_changeable_name">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/_11sdp"
+                android:maxLines="1"
+                notNullText="@{cartModel.desc}"
+                android:ellipsize="end"
+                android:text="@string/lorem_ipsum_or_lipsum_as_it_is_sometimes_known_is_dummy_text_used_in_laying_out_print_graphic_or_web_designs_the_passage_is_attributed_to_an_unknown_typesetter_in_the_15th_century_who_is_thought_to_have_scrambled_parts_of_cicero_s_de_finibus_bonorum_et_malorum_for_use_in_a_type_specimen_book">
+            </TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="@string/select_count"></TextView>
+
+                <com.art4musilm.artfoodCustomer.commons.numberPicker.NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:min="1"
+                    android:id="@+id/counter"
+                    app:value="@{cartModel.count}"></com.art4musilm.artfoodCustomer.commons.numberPicker.NumberPicker>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_gravity="top"
+            android:padding="10dp"
+            android:id="@+id/delete_btn"
+            android:src="@drawable/ic_icon_material_delete_forever">
+        </ImageView>
+
+    </LinearLayout>
+</layout>

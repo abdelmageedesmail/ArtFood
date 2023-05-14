@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.art4musilm.artfoodCustomer.viewModels.LocationsViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activites.LocationActivity">
+        <include layout="@layout/loading_layout"
+            app:viewModel="@{viewModel}"/>
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/custom_app_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+            <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="gharaief.app.com.uberapp.MapsActivity" />
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_pin_1">
+            </ImageView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                style="@style/txt_input_style"
+                android:textSize="@dimen/_10sdp"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/_15sdp"
+                android:visibility="gone"
+                android:drawableStart="@drawable/ic_search_1"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:hint="@string/search_locations"
+                android:background="@drawable/input_bg">
+            </EditText>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp"
+            android:gravity="center|top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:id="@+id/address_tv"
+                android:drawableStart="@drawable/ic_locate"
+                android:drawablePadding="@dimen/_5sdp"
+                android:text="@string/el_dammam_ksa">
+            </TextView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:visibility="gone"
+                android:background="@color/uvv_light_gray">
+            </View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_5sdp"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="@string/location_description"
+                android:layout_gravity="start">
+            </TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_5sdp"
+                style="@style/txt_input_style"
+                android:hint="@string/ex_end_of_street"
+                android:visibility="gone"
+                android:background="@drawable/strock_input">
+            </EditText>
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/orange_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:onClick="saveLocation"
+                android:text="@string/done"></androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

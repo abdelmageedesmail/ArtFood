@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="lang"
+            type="String" />
+        <variable
+            name="productMasterAddition"
+            type="com.art4musilm.artfoodCustomer.models.response.ProdAddition" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardElevation="@dimen/_1sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/_25sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                notNullText='@{lang.equals("ar")?productMasterAddition.name:productMasterAddition.nameen}'
+                android:background="@drawable/property_bg"
+                android:text="@string/souce_type"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/meal_property_list"
+                android:padding="@dimen/_5sdp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_layout_meal_property"
+                android:orientation="horizontal"></androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

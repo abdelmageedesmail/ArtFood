@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.art4musilm.artfoodCustomer.viewModels.AppInfoViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activites.RulesActivity">
+
+        <include
+            layout="@layout/custom_app_bar"
+            android:id="@+id/toolbar"></include>
+        <include layout="@layout/loading_layout"
+            app:viewModel="@{viewModel}"/>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_logo"
+                    android:layout_margin="@dimen/_15sdp"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    notNullHtmlText="@{viewModel.observeAppInfo().data.text}"
+                    android:textSize="@dimen/_12sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/lorem_ipsum_or_lipsum_as_it_is_sometimes_known_is_dummy_text_used_in_laying_out_print_graphic_or_web_designs_the_passage_is_attributed_to_an_unknown_typesetter_in_the_15th_century_who_is_thought_to_have_scrambled_parts_of_cicero_s_de_finibus_bonorum_et_malorum_for_use_in_a_type_specimen_book"></TextView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

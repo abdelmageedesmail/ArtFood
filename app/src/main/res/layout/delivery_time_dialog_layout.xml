@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:text="@string/select_delivery_time"></TextView>
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/specific_time_sp"
+            style="@style/txt_input_style"
+            android:hint="@string/select_time"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/strock_input"></com.weiwangcn.betterspinner.library.BetterSpinner>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/time_layout"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                style="@style/txt_input_style"
+                android:id="@+id/date_input"
+                android:drawableStart="@drawable/ic_ico___24___actions___calendar_month"
+                android:hint="@string/date"
+                android:background="@drawable/strock_input"
+                android:layout_marginTop="@dimen/_10sdp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    style="@style/txt_input_style"
+                    android:layout_weight="1"
+                    android:id="@+id/from_time_input"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:hint="@string/from_time"
+                    android:background="@drawable/strock_input"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    style="@style/txt_input_style"
+                    android:layout_weight="1"
+                    android:id="@+id/to_time_input"
+                    android:hint="@string/to_time"
+                    android:background="@drawable/strock_input"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/select_time"
+            android:id="@+id/submit_btn"
+            style="@style/orange_button">
+        </androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+</layout>

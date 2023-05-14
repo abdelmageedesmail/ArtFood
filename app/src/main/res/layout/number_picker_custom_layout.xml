@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/decrement"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/ic_minussm"
+            android:text="-"
+            android:gravity="center"
+            android:elevation="@dimen/_5sdp" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_weight="1"
+            android:textSize="@dimen/_10sdp"
+            android:background="@null"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:id="@+id/display"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/increment"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_plussm"
+            android:gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:elevation="@dimen/_5sdp" />
+
+    </LinearLayout>
+</layout>

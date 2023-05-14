@@ -1,0 +1,33 @@
+<component name="libraryTable">
+  <library name="Gradle: me.aflak.libraries:fingerprint:2.5.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/65d644b543caeff01eafc30f18a53826/jetified-fingerprint-2.5.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/65d644b543caeff01eafc30f18a53826/jetified-fingerprint-2.5.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/65d644b543caeff01eafc30f18a53826/jetified-fingerprint-2.5.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/36fa4386ea86a8d3102d5403c2c4717f/jetified-fingerprint-2.5.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/36fa4386ea86a8d3102d5403c2c4717f/jetified-fingerprint-2.5.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/36fa4386ea86a8d3102d5403c2c4717f/jetified-fingerprint-2.5.3/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3c4153c943b00573cd177fd52f2dcd8a/jetified-fingerprint-2.5.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3c4153c943b00573cd177fd52f2dcd8a/jetified-fingerprint-2.5.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3c4153c943b00573cd177fd52f2dcd8a/jetified-fingerprint-2.5.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/659380b03a4f72e558ee138c41595791/jetified-fingerprint-2.5.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/659380b03a4f72e558ee138c41595791/jetified-fingerprint-2.5.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/659380b03a4f72e558ee138c41595791/jetified-fingerprint-2.5.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e2baade022523ca2e38accb5f34c3e47/jetified-fingerprint-2.5.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e2baade022523ca2e38accb5f34c3e47/jetified-fingerprint-2.5.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e2baade022523ca2e38accb5f34c3e47/jetified-fingerprint-2.5.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c261a32c8275774eab7d777cf9a38917/jetified-fingerprint-2.5.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c261a32c8275774eab7d777cf9a38917/jetified-fingerprint-2.5.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c261a32c8275774eab7d777cf9a38917/jetified-fingerprint-2.5.3/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19ceaeb3f1b36796fe24a035f4b1de3e/jetified-fingerprint-2.5.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19ceaeb3f1b36796fe24a035f4b1de3e/jetified-fingerprint-2.5.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/19ceaeb3f1b36796fe24a035f4b1de3e/jetified-fingerprint-2.5.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.aflak.libraries/fingerprint/2.5.3/b5ac993ee201f64b1e4785d6e7f9707ab10c49fc/fingerprint-2.5.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.aflak.libraries/fingerprint/2.5.3/9d24bf591a5b1a512424dedb595fc2448fa5d4aa/fingerprint-2.5.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

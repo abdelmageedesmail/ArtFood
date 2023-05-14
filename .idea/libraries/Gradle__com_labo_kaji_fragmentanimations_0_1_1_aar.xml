@@ -1,0 +1,42 @@
+<component name="libraryTable">
+  <library name="Gradle: com.labo.kaji:fragmentanimations:0.1.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d2cc1baf2b9e1094dd8b75a8d3eb3407/jetified-fragmentanimations-0.1.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/17fe8e3bedf666dbbf85c79e3c7d5bca/jetified-fragmentanimations-0.1.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a04b5e50ee732dcc309f74311904b2c8/jetified-fragmentanimations-0.1.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0abc56bd64fe0ede33eeb562ff1c72f0/jetified-fragmentanimations-0.1.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/96f3cb069a6574720763a8718fa2bc6b/jetified-fragmentanimations-0.1.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1b6047f1b3ba1034a885e23d239d4199/jetified-fragmentanimations-0.1.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/971bf532419f61e1d2d2e4d71490a2a3/jetified-fragmentanimations-0.1.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d2cc1baf2b9e1094dd8b75a8d3eb3407/jetified-fragmentanimations-0.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d2cc1baf2b9e1094dd8b75a8d3eb3407/jetified-fragmentanimations-0.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d2cc1baf2b9e1094dd8b75a8d3eb3407/jetified-fragmentanimations-0.1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/17fe8e3bedf666dbbf85c79e3c7d5bca/jetified-fragmentanimations-0.1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/17fe8e3bedf666dbbf85c79e3c7d5bca/jetified-fragmentanimations-0.1.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/17fe8e3bedf666dbbf85c79e3c7d5bca/jetified-fragmentanimations-0.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a04b5e50ee732dcc309f74311904b2c8/jetified-fragmentanimations-0.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a04b5e50ee732dcc309f74311904b2c8/jetified-fragmentanimations-0.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a04b5e50ee732dcc309f74311904b2c8/jetified-fragmentanimations-0.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0abc56bd64fe0ede33eeb562ff1c72f0/jetified-fragmentanimations-0.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0abc56bd64fe0ede33eeb562ff1c72f0/jetified-fragmentanimations-0.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0abc56bd64fe0ede33eeb562ff1c72f0/jetified-fragmentanimations-0.1.1/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/96f3cb069a6574720763a8718fa2bc6b/jetified-fragmentanimations-0.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/96f3cb069a6574720763a8718fa2bc6b/jetified-fragmentanimations-0.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/96f3cb069a6574720763a8718fa2bc6b/jetified-fragmentanimations-0.1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1b6047f1b3ba1034a885e23d239d4199/jetified-fragmentanimations-0.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1b6047f1b3ba1034a885e23d239d4199/jetified-fragmentanimations-0.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1b6047f1b3ba1034a885e23d239d4199/jetified-fragmentanimations-0.1.1/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/971bf532419f61e1d2d2e4d71490a2a3/jetified-fragmentanimations-0.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/971bf532419f61e1d2d2e4d71490a2a3/jetified-fragmentanimations-0.1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/971bf532419f61e1d2d2e4d71490a2a3/jetified-fragmentanimations-0.1.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.labo.kaji/fragmentanimations/0.1.1/4e488b68ee5c69c61e0446c751f331e4c2a11932/fragmentanimations-0.1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.labo.kaji/fragmentanimations/0.1.1/7367b6d3d3af457b2dbcc845de49ff8f07153bfe/fragmentanimations-0.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

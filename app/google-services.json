@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "257680367780",
+    "project_id": "artfood-2e68b",
+    "storage_bucket": "artfood-2e68b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257680367780:android:07d6bc656631e9cfae8631",
+        "android_client_info": {
+          "package_name": "com.art4musilm.artfoodCustomer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257680367780-6r6pv8bhj5bu1p1l31f7qh72pvaq4v8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs6W5B4cvPtt8u4_PE1IU5kze10-Mz1zs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257680367780-6r6pv8bhj5bu1p1l31f7qh72pvaq4v8k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "257680367780-jn0c5pmb0hdev1gkn8c4cdcedb8v7e3q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.art4muslim.ArtFoodDriver"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257680367780:android:af31f2bc99c8b9a2ae8631",
+        "android_client_info": {
+          "package_name": "com.art4muslimt.artfooddelegate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257680367780-6r6pv8bhj5bu1p1l31f7qh72pvaq4v8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs6W5B4cvPtt8u4_PE1IU5kze10-Mz1zs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257680367780-6r6pv8bhj5bu1p1l31f7qh72pvaq4v8k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "257680367780-jn0c5pmb0hdev1gkn8c4cdcedb8v7e3q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.art4muslim.ArtFoodDriver"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257680367780:android:7f1cd0a311fc0f88ae8631",
+        "android_client_info": {
+          "package_name": "com.art4muslimt.artfoodprofamilies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257680367780-6r6pv8bhj5bu1p1l31f7qh72pvaq4v8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs6W5B4cvPtt8u4_PE1IU5kze10-Mz1zs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257680367780-6r6pv8bhj5bu1p1l31f7qh72pvaq4v8k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "257680367780-jn0c5pmb0hdev1gkn8c4cdcedb8v7e3q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.art4muslim.ArtFoodDriver"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

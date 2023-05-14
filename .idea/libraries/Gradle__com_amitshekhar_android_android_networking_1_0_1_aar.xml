@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amitshekhar.android:android-networking:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/212e57243e93ea07e3a6e63fc0718654/jetified-android-networking-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/212e57243e93ea07e3a6e63fc0718654/jetified-android-networking-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/212e57243e93ea07e3a6e63fc0718654/jetified-android-networking-1.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bdf2d06d70346211a10c0d29a00bb9a3/jetified-android-networking-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bdf2d06d70346211a10c0d29a00bb9a3/jetified-android-networking-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bdf2d06d70346211a10c0d29a00bb9a3/jetified-android-networking-1.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/357e5524bb81c78c87c5251b5e9c4438/jetified-android-networking-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/357e5524bb81c78c87c5251b5e9c4438/jetified-android-networking-1.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/357e5524bb81c78c87c5251b5e9c4438/jetified-android-networking-1.0.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amitshekhar.android/android-networking/1.0.1/d9e35485234aadbd682736399365cfba97ce1f70/android-networking-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amitshekhar.android/android-networking/1.0.1/21134e25889a8db094948facc3e99b78a87f04ca/android-networking-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

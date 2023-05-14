@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="invoice"
+            type="com.art4musilm.artfoodCustomer.models.response.Invoice" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingStart="@dimen/_25sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp"
+                    notNullText='@{String.valueOf(@string/operation_no_1222)+invoice.id}'
+                    android:text="@string/operation_no_1222"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_9sdp"
+                    notNullText="@{invoice.date}"
+                    android:text="10/10/2021"></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingEnd="@dimen/_25sdp"
+                android:textColor='@{invoice.operation.equals("+")?@color/green:@color/red}'
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sdp"
+                notNullText='@{invoice.operation+String.format(@string/sar(invoice.price))}'
+                android:text="@string/_5_sar"></TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

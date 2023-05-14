@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.art4musilm.artfoodCustomer.viewModels.AccountViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activites.account.PersonalInfoActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/custom_app_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></include>
+        <include layout="@layout/loading_layout"
+            app:viewModel="@{viewModel}"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center|top"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+            <EditText
+                style="@style/txt_input_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/input_bg"
+                android:drawableStart="@drawable/ic_user_1"
+                android:hint="@string/username"
+                android:textAlignment="viewStart"
+                notNullText="@{viewModel.observeUserProfile().data.name}"
+                android:id="@+id/name_input"
+                android:inputType="text"></EditText>
+
+            <EditText
+                style="@style/txt_input_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/input_bg"
+                android:drawableStart="@drawable/ic_greycall"
+                android:hint="@string/phone_number"
+                notNullText="@{viewModel.observeUserProfile().data.mobile}"
+                android:id="@+id/phone_input"
+                android:textAlignment="viewStart"
+                android:inputType="phone"></EditText>
+
+            <EditText
+                style="@style/txt_input_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/input_bg"
+                android:drawableStart="@drawable/ic_envelope"
+                android:hint="@string/email_address"
+                android:textAlignment="viewStart"
+                notNullText="@{viewModel.observeUserProfile().data.email}"
+                android:id="@+id/email_input"
+                android:inputType="textEmailAddress"></EditText>
+
+            <EditText
+                style="@style/txt_input_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/input_bg"
+                android:drawableStart="@drawable/ic_user_1"
+                android:hint="@string/country"
+                android:visibility="gone"
+                android:textAlignment="viewStart"
+                android:inputType="textPassword"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/orange_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="@string/save"
+                android:onClick="save"
+                android:textSize="@dimen/_11sdp"
+                android:layout_weight="1"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
